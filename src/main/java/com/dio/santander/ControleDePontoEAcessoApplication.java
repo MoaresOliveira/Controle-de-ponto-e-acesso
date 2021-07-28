@@ -1,4 +1,4 @@
-package com.dio.santander.projetos.Controle.de.ponto.e.acesso;
+package com.dio.santander;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

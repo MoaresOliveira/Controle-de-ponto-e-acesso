@@ -1,10 +1,10 @@
-package com.dio.santander.projetos.Controle.de.ponto.e.acesso.model;
+package com.dio.santander.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-
-
 
 @Getter
 @Setter
@@ -12,8 +12,10 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Localidade {
-    private long id;
+    @Id
+    private  long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;
     private String descricao;

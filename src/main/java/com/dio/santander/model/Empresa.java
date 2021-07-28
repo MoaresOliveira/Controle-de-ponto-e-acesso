@@ -1,6 +1,10 @@
-package com.dio.santander.projetos.Controle.de.ponto.e.acesso.model;
+package com.dio.santander.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -8,12 +12,15 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
+@Audited
 public class Empresa {
-    private long id;
+    @Id
+    private Long id;
     private String descricao;
     private String cnpj;
     private String endereco;
-    private String bairro;
+    private String bairo;
     private String cidade;
     private String estado;
     private String telefone;

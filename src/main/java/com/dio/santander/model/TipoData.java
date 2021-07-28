@@ -1,6 +1,9 @@
-package com.dio.santander.projetos.Controle.de.ponto.e.acesso.model;
+package com.dio.santander.model;
 
 import lombok.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -8,7 +11,9 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class JornadaTrabalho {
+@Entity
+public class TipoData {
+    @Id
     private long id;
     private String descricao;
 }
