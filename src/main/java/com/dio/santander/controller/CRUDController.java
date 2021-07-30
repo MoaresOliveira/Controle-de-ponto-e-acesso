@@ -33,7 +33,7 @@ public abstract class CRUDController<Object,Service extends CRUDservices<Object,
     }
 
     @PutMapping
-    @Operation(summary = "Atualiza um Objeto (ID Not Required)")
+    @Operation(summary = "Atualiza um Objeto")
     public Object update(@RequestBody Object entity){
         return service.save(entity);
     }
