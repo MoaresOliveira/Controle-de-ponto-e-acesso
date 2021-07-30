@@ -25,9 +25,9 @@ public class BancoHoras {
     @Getter
     @Setter
     public  class BancoHorasId implements Serializable{
-        private long idBancoHoras;
-        private long idMovimentacao;
-        private long idUsuario;
+        private Long idBancoHoras;
+        private Long idMovimentacao;
+        private Long idUsuario;
 
 
     }

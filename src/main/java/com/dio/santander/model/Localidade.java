@@ -3,6 +3,7 @@ package com.dio.santander.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -15,7 +16,8 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Localidade {
     @Id
-    private  long id;
+    @GeneratedValue
+    private Long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;
     private String descricao;

@@ -1,6 +1,5 @@
 package com.dio.santander.service;
 
-
 import com.dio.santander.model.NivelAcesso;
 import com.dio.santander.repository.NivelAcessoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

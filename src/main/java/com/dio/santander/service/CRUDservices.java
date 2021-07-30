@@ -1,28 +1,27 @@
 package com.dio.santander.service;
 
-
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public abstract class CRUDservices<O,R extends JpaRepository<O,Long>> {
+public abstract class CRUDservices<Object,Repository extends JpaRepository<Object,Long>> {
 
-    R repository;
+    Repository repository;
 
-    public O save(O entity){
+    public Object save(Object entity){
         return repository.save(entity);
     };
 
-    public Optional<O> findById(Long id){
+    public Optional<Object> findById(Long id){
         return repository.findById(id);
     }
 
-    public List<O> findAll(){
+    public List<Object> findAll(){
         return repository.findAll();
     }
 
-    public O update(O entity){
+    public Object update(Object entity){
         return repository.save(entity);
     }
 

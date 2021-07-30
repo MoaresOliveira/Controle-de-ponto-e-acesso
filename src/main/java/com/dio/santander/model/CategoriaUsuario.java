@@ -18,6 +18,6 @@ import javax.persistence.Id;
 public class CategoriaUsuario {
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
     private String descricao;
 }
