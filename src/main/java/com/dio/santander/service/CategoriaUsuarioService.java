@@ -9,32 +9,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class CategoriaUsuarioService {
+public class CategoriaUsuarioService extends CRUDservices<CategoriaUsuario,CategoriaUsuarioRepository> {
 
-    CategoriaUsuarioRepository categoriaUsuarioRepository;
 
     @Autowired
     public CategoriaUsuarioService(CategoriaUsuarioRepository categoriaUsuarioRepository){
-        this.categoriaUsuarioRepository = categoriaUsuarioRepository;
+        this.repository = categoriaUsuarioRepository;
     }
 
-    public CategoriaUsuario saveCategoria(CategoriaUsuario categoriaUsuario){
-        return categoriaUsuarioRepository.save(categoriaUsuario);
-    }
 
-    public CategoriaUsuario updateCategoria(CategoriaUsuario categoriaUsuario){
-        return categoriaUsuarioRepository.save(categoriaUsuario);
-    }
-
-    public void deleteCategoria(Long idCategoria){
-        categoriaUsuarioRepository.deleteById(idCategoria);
-    }
-
-    public List<CategoriaUsuario> getAll(){
-        return categoriaUsuarioRepository.findAll();
-    }
-
-    public Optional<CategoriaUsuario> getByID(Long idCategoria){
-        return categoriaUsuarioRepository.findById(idCategoria);
-    }
 }

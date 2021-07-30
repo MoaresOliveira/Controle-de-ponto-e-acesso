@@ -27,9 +27,11 @@ dependencies {
 
 	implementation 'com.h2database:h2'
 
-	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
-	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
-	implementation group: 'io.springfox', name: 'springfox-bean-validators', version: '3.0.0'
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.5.9'
+//	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
+//	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
+//	implementation group: 'io.springfox', name: 'springfox-bean-validators', version: '3.0.0'
 
 	implementation group: 'org.hibernate', name: 'hibernate-envers', version: '5.5.4.Final'
 	implementation group: 'org.hibernate', name: 'hibernate-validator', version: '7.0.1.Final'
