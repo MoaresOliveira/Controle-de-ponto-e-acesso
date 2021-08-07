@@ -10,6 +10,6 @@
 
 ## 📗 Swagger
 Para acessar o Swagger da aplicação por padrão será o seguinte endereço:
-- `http://localhost:8080/swagger-ui.html`
+- `http://localhost:8080/`
 
 _A porta pode ser alterada utilizando a propriedade `server.port` em `application.properties`_
